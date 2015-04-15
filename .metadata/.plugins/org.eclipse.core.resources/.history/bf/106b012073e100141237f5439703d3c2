@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package projectOne;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+/**
+ * Project: Project1                                            
+ * Account: CS30100_28           
+ * Author: Taban Cosmos                        
+ * Creation date:                                     
+ * Completion time: 6 hours                                        
+ *                                                              
+ * Honor Code: I pledge that this program represents my         
+ *   own program code.                     
+ */
+
+
+public abstract class MyVector<V> implements List<V> {
+
+	/**Fields
+	 * x-values
+	 * y-values
+	 */
+	
+	public MyVector() {
+
+	}
+	
+}

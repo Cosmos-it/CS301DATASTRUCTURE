@@ -1,0 +1,78 @@
+/**
+ * 
+ */
+package projectOne;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+/**
+ * Project: Project1                                            
+ * Account: CS30100_28           
+ * Author: Taban Cosmos                        
+ * Creation date:                                     
+ * Completion time: 6 hours                                        
+ *                                                              
+ * Honor Code: I pledge that this program represents my         
+ *   own program code.                     
+ */
+
+
+public abstract class MyVector<V> implements List<V> {
+
+	/**Fields
+	 * x-values
+	 * y-values
+	 */
+	private V x;
+	private V y;
+	private V initialize;
+	
+	public MyVector() {
+		this.x = null;
+		this.y = null;
+		this.initialize = null;
+	}
+	
+	/** This method takes in the kth number of the
+	 * 	the user input.
+	 * 
+	 *  Algorithm:
+	 *  	
+	 * */
+	
+	public void plus(MyVector<V> number){
+		
+	}
+	
+	public V getX(){
+		return x;
+	}
+	
+	public void setX(V x) {
+		this.x = x;
+	}
+	
+	public V getY(){
+		return y;
+	}
+	
+	public void setY(V y) {
+		this.y = y;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

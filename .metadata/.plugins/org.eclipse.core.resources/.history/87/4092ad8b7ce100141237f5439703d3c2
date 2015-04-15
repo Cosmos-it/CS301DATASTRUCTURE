@@ -1,0 +1,86 @@
+/**
+ * 
+ */
+package projectOne;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Project: Project1                                            
+ * Account: CS30100_28           
+ * Author: Taban Cosmos                        
+ * Creation date:                                     
+ * Completion time: 6 hours                                        
+ *                                                              
+ * Honor Code: I pledge that this program represents my         
+ *   own program code.                     
+ */
+
+
+public class MyVector<V> {
+
+	/**Fields
+	 * x-values
+	 * y-values
+	 */
+	private V x;
+	private V y;
+	@SuppressWarnings("unused")
+	private List<V> initialize;
+
+	/**Default constructor **/
+	public MyVector() {
+		this.x = null;
+		this.y = null;
+		this.initialize = new ArrayList<V>();
+	}
+	
+	/** Copy constructor **/
+	@SuppressWarnings("unchecked")
+	public MyVector(V x, V y, V initialize) {
+		this.initialize = (List<V>) initialize;
+		this.x = x;
+		this.y = y;
+	}
+
+	/** This method takes in the kth number of the
+	 * 	the user input.
+	 *  Algorithm:
+	 *  	
+	 * */
+
+	/** Plus method. Performs vectors addition **/
+	public V plus(MyVector<V> number){
+		return null;
+	}
+	
+	
+	public V minus() {
+		return null;
+	}
+
+	/** getters and setters **/
+	public V getX() { return x; }
+	public void setX(V x) { this.x = x; }
+	public V getY() { return y; }
+	public void setY(V y) { this.y = y; }
+	
+	/**toString method**/
+	public String toString(){
+		return "X" + this.getX() + "Y" + this.getY() + 
+				"\nAddition Result: " + this.minus();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

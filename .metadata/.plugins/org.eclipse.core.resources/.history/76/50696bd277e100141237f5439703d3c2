@@ -1,0 +1,28 @@
+package projectOne;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class MyVectorClient {
+
+	public static void main(String[] args) {
+
+		/**Create an arrayList to store the vectors */
+		List<Double> vectors = new ArrayList<Double>();
+		
+		display(vectors); //Displays menu:
+		/**Create an object that takes a user
+		 * input for vector calculations 
+		 * */
+	}
+	
+	
+	/**User input
+	 * @param <V>*/
+	public static <V> void display(List<Double> vectors) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Input x and y values to begin: ");
+		System.out.println("Input your x values");
+	}
+}

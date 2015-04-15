@@ -1,0 +1,28 @@
+package projectOne;
+import java.util.Scanner;
+
+public class MyVectorClient {
+
+	public static void main(String[] args) {
+		
+
+		/**Create an object that takes a user
+		 * input for vector calculations 
+		 * */
+		
+
+	
+		String a = "Input x and y values to begin: ";
+		String b = "Input your x values";
+		System.out.println(a + b);
+	
+		Scanner scan = new Scanner(System.in);
+		double vectorValue = scan.nextDouble();
+		
+		MyVector<Double> vectors = new MyVector<Double>();
+//		double x = vectors.plus(vectorValue);
+
+
+	}
+
+}

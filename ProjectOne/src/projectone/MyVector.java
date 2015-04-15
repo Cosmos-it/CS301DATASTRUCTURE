@@ -2,7 +2,7 @@ package projectone;
 /**
  * @author Taban
  */
-public class MyVector<MV> {
+public class MyVector {
 
     /**
      * Store the vectors in ArrayList
@@ -11,6 +11,7 @@ public class MyVector<MV> {
     public MyVector() {
         
     }
-
+    
+    
     
 }
