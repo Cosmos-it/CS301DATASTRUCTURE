@@ -44,7 +44,12 @@ public class MyVector {
         return N;
     }
 
-    // return the inner product of this Vector a and b
+    /** return the inner product of this Vector a and b
+     * 
+     * @param thatVector
+     * @return sum
+     */
+    
     public double dot(MyVector thatVector) {
         if (this.N != thatVector.N) {
             throw new RuntimeException("Dimensions don't agree");
@@ -56,7 +61,11 @@ public class MyVector {
         return sum;
     }
 
-    // return this + thatVector
+    /** return this + thatVector
+     * 
+     * @param thatVector
+     * @return 
+     */
     public MyVector plus(MyVector thatVector) {
         if (this.N != thatVector.N) {
             throw new RuntimeException("Dimensions don't agree");
@@ -68,7 +77,11 @@ public class MyVector {
         return c;
     }
 
-    // return this - thatVector
+    /** return this - thatVector
+     * 
+     * @param thatVector
+     * @return 
+     */
     public MyVector minus(MyVector thatVector) {
         if (this.N != thatVector.N) {
             throw new RuntimeException("Dimensions don't agree");
@@ -80,7 +93,11 @@ public class MyVector {
         return c;
     }
 
-    //create and return a new object whose value is (this * factor)
+    /** create and return a new object whose value is (this * factor)
+     * 
+     * @param factor
+     * @return 
+     */
     public MyVector multiply(double factor) {
         MyVector c = new MyVector(N);
         for (int i = 0; i < N; i++) {
@@ -89,7 +106,11 @@ public class MyVector {
         return c;
     }
 
-    //scale the values in the array. (Multiply by a double)
+    /** scale the values in the array. (Multiply by a double)
+     * 
+     * @param scale
+     * @return 
+     */
     public MyVector scaledBy(double scale) {
         double[] sum = new double[data.size()];
         for (int i = 0; i < data.size(); i++) {
@@ -98,7 +119,11 @@ public class MyVector {
         return new MyVector(sum);
     }
 
-    //return absolute value |abs|
+    /** return absolute value |abs|
+     * 
+     * @param vector
+     * @return 
+     */
     public MyVector abs(MyVector vector) {
         double[] absValue = new double[data.size()];
         for (int i = 0; i < this.data.size(); i++) {
@@ -108,7 +133,11 @@ public class MyVector {
 
     }
 
-    //check the equality (Length) for the vectors
+    /** check the equality (Length) for the vectors
+     * 
+     * @param vector
+     * @return 
+     */
     public boolean equals(MyVector vector) {
         for (int i = 0; i < data.size(); i++) {
             if (!vector.data.get(i).equals(data.get(i))) {
@@ -118,7 +147,10 @@ public class MyVector {
         return true;
     }
 
-    //return a string representation of the vector
+    /** return a string representation of the vector
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         String outPut = "{";

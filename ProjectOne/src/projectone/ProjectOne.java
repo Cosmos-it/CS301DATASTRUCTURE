@@ -32,8 +32,15 @@ public class ProjectOne {
 
     }
 
-    //This method prints out the output being calculated in
-    //the MyVector class
+    /** This method prints out the output being calculated in the MyVector class
+     * 
+     * @param c1 - double variable 
+     * @param c2 - double variable
+     * @param vector1 - vector arrayList
+     * @param inPut1 - boolean value
+     * @param vector2 - second ArrayList
+     * @param inPut2 - boolean value
+     */ 
     private static void printOut(double c1, List vector1,
             boolean inPut1, double c2, List vector2, boolean inPut2) {
         double multiplier;
