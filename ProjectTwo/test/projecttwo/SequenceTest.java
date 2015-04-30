@@ -72,7 +72,6 @@ public class SequenceTest {
         instance.append(TWO);
         instance.append(THREE);
         instance.set(k, 19);
-
         assertEquals(19, instance.get(k));
     }
 
